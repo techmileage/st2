@@ -1,0 +1,10 @@
+---
+name: "zendesk.insert"
+action_ref: "zendesk.insert"
+description: "Create new zendesk ticket "
+formats:
+    - "Create ticket with subject line {{subject}}  and description {{description}}"
+ack:
+    format: "open ticket"
+result:
+    format: "open ticket"

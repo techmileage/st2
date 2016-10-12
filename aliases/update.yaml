@@ -1,0 +1,10 @@
+---
+name: "zendesk.update"
+action_ref: "zendesk.update"
+description: "update zendesk ticket "
+formats:
+    - "update ticket with subject line {{subject}} status is marked as pending"
+ack:
+    format: "update ticket"
+result:
+    format: "update ticket"

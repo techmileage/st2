@@ -1,0 +1,11 @@
+---
+name: "close"
+runner_type: "python-script"
+description: "close entry in a zendesk tickets"
+enabled: true
+entry_point: "close.py"
+parameters:
+  subject:
+    type: "string"
+    description: "Subject to search for "
+    required: true

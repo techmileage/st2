@@ -1,0 +1,10 @@
+---
+name: "zendesk.close"
+action_ref: "zendesk.close"
+description: "Close zendesk ticket "
+formats:
+    - "mark ticket with subject line {{subject}} status is marked as closed"
+ack:
+    format: "Close ticket"
+result:
+    format: "Closed ticket"

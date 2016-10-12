@@ -1,0 +1,15 @@
+---
+name: "insert"
+runner_type: "python-script"
+description: "Insert an ticket entry to a zenpy Table"
+enabled: true
+entry_point: "insert.py"
+parameters:
+  subject:
+    type: "string"
+    description: "subject for the ticket"
+    required: true
+  description:
+    type: "string"
+    description: "Description"
+    required: true

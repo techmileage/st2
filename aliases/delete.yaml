@@ -1,0 +1,10 @@
+---
+name: "zendesk.delete"
+action_ref: "zendesk.delete"
+description: "Close zendesk ticket "
+formats:
+    - "mark ticket with id {{id}} status is marked as closed"
+ack:
+    format: "delete ticket"
+result:
+    format: "delete ticket"

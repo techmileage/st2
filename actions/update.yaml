@@ -1,0 +1,11 @@
+---
+name: "update"
+runner_type: "python-script"
+description: "Update a new entry in a zendesk tickets"
+enabled: true
+entry_point: "update.py"
+parameters:
+  subject:
+    type: "string"
+    description: "Subject to search for "
+    required: true
