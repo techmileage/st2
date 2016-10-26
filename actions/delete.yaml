@@ -5,11 +5,7 @@ description: "Delete an entry from a ServiceNow Table"
 enabled: true
 entry_point: "delete.py"
 parameters:
-  table:
+  ticket_id:
     type: "string"
-    description: "Table to take action on"
-    required: true
-  sysid:
-    type: "string"
-    description: "ID of record"
+    description: "Id of ticket"
     required: true

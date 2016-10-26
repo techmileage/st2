@@ -7,5 +7,9 @@ entry_point: "update.py"
 parameters:
   subject:
     type: "string"
-    description: "Subject to search for "
-    required: true
+    description: "Subject of the ticket to search for "
+    required: false 
+  ticket_id:
+    type: "string"
+    description: "ID of the ticket to search for "
+    required: false 

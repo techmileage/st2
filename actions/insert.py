@@ -11,12 +11,11 @@ class AddTicket(BaseAction):
             newTicket = Ticket(subject=subject, description=description)
             # call api to create it
             response = self.client.tickets.create(newTicket)
-            # capture the id
-            id = response['ticket']['id']
+            # capture and return the id
+            return response.ticket.id
         except APIException as e:
-            print('Adding ticket with subject {1} failed with API exception {2}'
+            print('Adding ticket with subject {} failed with API exception {}'
                   .format(subject, e))
         except Exception as e:
-            print('Adding ticket with subject {1} failed with General exception {2}'
+            print('Adding ticket with subject {} failed with General exception {}'
                   .format(subject, e))
-        return id
