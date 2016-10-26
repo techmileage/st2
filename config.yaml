@@ -2,4 +2,9 @@
 ---
 subdomain: ""
 email: ""
+# specify either password or token or oauth id
+# you can set token or oauth at zendesk.com/agent/admin/api/settings
 password: ""
+token: ""
+oauth: ""
+---
